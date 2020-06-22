@@ -11,6 +11,8 @@ Inverse(scalar matrix): inv( k*A ) = (1/k) * inv(A)
 
 Inverse(matrix product): inv(A * B) = inv(B) %*% inv(A)
 
+Example
+~~~
 par(mar=c(3,3,1,1)+.1)
 xlim <- c(-1,3)
 ylim <- c(-1,3)
@@ -22,3 +24,4 @@ vectors(A, labels=c(expression(a[1]), expression(a[2])), pos.lab=c(4,2))
 vectors(sum, origin=A[1,], col="gray")
 vectors(sum, origin=A[2,], col="gray")
 text(mean(A[,1]), mean(A[,2]), "A", cex=1.5)
+~~~
